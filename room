@@ -1,0 +1,24 @@
+#include<iostream> //library
+using namespace std; //helper for iostream
+int main() { //starting point of program
+
+	int room;
+	cout << "enter a room number" << endl;
+	cin >> room;
+	
+	switch (room) {
+	case 1:
+		cout << "you are in room 1, the kitchen" << endl;
+		break;
+	case 2:
+		cout << "you are in room 2, the living room" << endl;
+		break;
+	case 3:
+		cout << "you are in room 3, the bedroom" << endl;
+		break;
+	default:
+		cout << "I don't know what room that is" << endl;
+		break;
+	} //end switch
+
+} //end main
