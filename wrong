@@ -1,0 +1,46 @@
+#include<iostream> //library
+using namespace std; //helper for iostream
+int main() { //starting point of program
+
+	int room;
+	char answer;
+	cout << "enter a room number" << endl;
+	cin >> room;
+	
+	while (true) {// game loop
+	switch (room) {
+	case 1:
+		cout << "you are in room 1, the kitchen.you can go east." << endl;
+		cin >> answer;
+		if (answer == 'e')
+			room = 2;
+		break;
+	case 2:
+		cout << "you are in room 2, the living room. you can go west and south." << endl;
+		cin >> answer;
+		if (answer == 'w')
+			room = 1;
+		else if (answer == 's')
+			room = 3;
+		break;
+	case 3:
+		cout << "you are in room 3, the bedroom. you can go north and east." << endl;
+		cin >> answer;
+		if (answer == 'n')
+			room = 2;
+		else if (answer == 'e')
+			room = 4;
+		break;
+	case 4:
+		cout << "you are in room 4, the bathroom. you can go south and west" << endl;
+		cin >> answer;
+		if (answer == 'w')
+			room = 3;
+		break;
+	default:
+		cout << "I don't know what room that is" << endl;
+		break;
+	
+	} //end switch
+
+} //end main
