@@ -1,0 +1,24 @@
+#include<iostream> //library
+using namespace std; //helper for iostream
+int main() { //starting point of program
+
+	char name = 'g';
+	cout << "enter a letter for a student name" << endl;
+	cin >> name;
+	
+switch (name) {
+	case 'e':
+		cout << "hello ezri" << endl;
+		break;
+	case 'c':
+		cout << "chris is cool" << endl;
+		break;
+	case 'g':
+		cout << "heya gio" << endl;
+		break;
+	default:
+		cout << "I don't know that student" << endl;
+		break;
+	} //end switch
+
+} //end main
